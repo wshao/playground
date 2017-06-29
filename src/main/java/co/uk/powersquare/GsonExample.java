@@ -28,7 +28,10 @@ public class GsonExample
         CloseableHttpClient httpClient = HttpClientBuilder.create().build();
         HttpPost httpPost = new HttpPost("https://N0ZULSTIED-dsn.algolia.net/1/indexes/wei_index/query");
         httpPost.addHeader("X-Algolia-Application-Id", "N0ZULSTIED");
-        httpPost.addHeader("X-Algolia-API-Key", "bf9b5c6d1c3d126a2f218161b8b2a295");
+        /**
+         * Update the keys
+         */
+        httpPost.addHeader("X-Algolia-API-Key", "xxxx");
         httpPost.setHeader("Content-type", "application/json");
 
         Gson gson = new Gson();
